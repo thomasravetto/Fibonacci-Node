@@ -16,3 +16,15 @@ function fibonacci(index) {
     return fibonacci_sequence[index];
     }
 }
+
+function fibonacci_recursive(num) {
+    if (num <= 1) {
+        return 1;
+    }
+    return fibonacci_recursive(num - 1) + fibonacci_recursive(num - 2);
+}
+
+for (let number = 0; number < 50; number++){
+    console.log("Normal:    ",fibonacci(number));
+    console.log("Recursive: ",fibonacci_recursive(number), "\n")
+}
