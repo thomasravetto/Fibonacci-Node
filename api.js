@@ -10,7 +10,6 @@ app.get('/', (req, res) => {
     res.send("Hi")
 })
 
-
 // Return fibonacci sequence from 0 to index, if no query is passed index defaults to 10
 app.get('/fibonacci', (req, res) => {
     let index = 10;
